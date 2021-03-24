@@ -114,9 +114,9 @@ if __name__ == '__main__':
         
         sub_data = args.cutoff
         total_users = len(data[0])
-        print(total_users)
+        # print(total_users)
         
-        randomList = get_cutoff_client(sub_data)        
+        randomList = get_cutoff_client(sub_data,total_users)        
         #print(total_users,randomList)
 
         for idx in range(len(net_local_list)):

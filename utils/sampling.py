@@ -174,7 +174,7 @@ def noniid_replace(dataset, num_users, shard_per_user, rand_set_all=[]):
 
     return dict_users, rand_set_all
 
-def get_cutoff_client(sub_data):
+def get_cutoff_client(sub_data, total_users):
     if(sub_data == 1):
         partion = int(0.9 * total_users)
     else:
